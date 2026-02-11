@@ -1,0 +1,172 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: "Georgia", serif;
+  background-color: #111;
+  color: #e8dcc8;
+}
+
+/* NAVIGATION */
+nav {
+  position: fixed;
+  top: 40px;
+  right: 50px;
+  z-index: 10;
+}
+
+nav a {
+  color: #e8dcc8;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  color: #caa86a;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background-image: url("photo.jpeg");
+  background-size: cover;
+  background-position: center 25%;
+  position: relative;
+  display: flex;
+  align-items: flex-end ;
+  padding-left: 10%;
+  padding-bottom: 7%;
+}
+
+/* SPOTLIGHT */
+.spotlight {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 230, 180, 0.15),
+      rgba(0, 0, 0, 0.75) 50%
+    );
+}
+
+/* HERO TEXT */
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* SECTIONS */
+.section {
+  min-height: auto;
+  padding: 80px 10%;
+  background-color: #111;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #caa86a;
+}
+
+.section p {
+  max-width: 700px;
+  font-size: 1.05rem;
+  line-height: 2
+}
+
+
+/* DARK ALT SECTION */
+.section.dark {
+  background-color: #0b0b0b;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0;
+  background-color: #0b0b0b;
+}
+
+footer a {
+  color: #e8dcc8;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+footer a:hover {
+  color: #caa86a;
+}
+
+
+/* ABOUT SECTION FLEX */
+.about-container {
+  display: flex;
+  gap: 20px;           
+  align-items: flex-start;
+}
+
+.highlight {
+  font-style: italic;
+  color: #f0e6d2;
+  margin-top: 15px;
+  font-size: 1.05rem;
+  max-width: 600px;
+}
+
+.about-text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  height: 100%;             
+}
+
+.about-left {
+  flex: 2;            
+  min-width: 250px;
+}
+
+.about-left h2 {
+  margin-bottom: 15px;
+  color: #caa86a;
+  font-size: 2rem;
+}
+
+.about-left p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.about-right {
+  flex: 1;            
+  display: flex;
+  flex-direction: column; 
+  gap: 5px;
+  align-items: center;
+}
+
+.about-right img {
+  width: 80%;
+  border-radius: 12px;
+  object-fit: cover;
+}
