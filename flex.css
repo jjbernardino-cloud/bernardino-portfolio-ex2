@@ -302,7 +302,10 @@ footer a:hover {
 
 .affiliation {
   flex: 1 1 250px;  
-  text-align: center;
+  display: flex;              
+  flex-direction: column;   
+  align-items: center;       
+  text-align: center;        
   background-color: #111;
   padding: 20px;
   border-radius: 12px;
@@ -325,4 +328,10 @@ footer a:hover {
   font-size: 1rem;
   color: #e8dcc8;
   line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
